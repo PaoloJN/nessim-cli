@@ -1,0 +1,31 @@
+{
+    "name": "multi-forge",
+    "version": "1.0.0",
+    "main": "build/index.js",
+    "type": "module",
+    "bin": {
+        "multi-forge": "./build/index.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "@inquirer/prompts": "^5.5.0",
+        "@types/node": "^22.5.4",
+        "boxen": "^8.0.1",
+        "chalk": "^5.3.0",
+        "commander": "^12.1.0",
+        "consola": "^3.2.3",
+        "figlet": "^1.7.0",
+        "ts-node": "^10.9.2",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.5.4"
+    },
+    "devDependencies": {
+        "@types/figlet": "^1.5.8"
+    }
+}
