@@ -9,11 +9,11 @@
 </p>
 <br/>
 
-<img src="./screen.gif" alt="MultiForge CLI" width="100%">
+<img src="https://github.com/user-attachments/assets/fb67b060-2dda-49dc-bbbf-0b0c3d9290a3" alt="MultiForge CLI" width="100%">
 
 <br/>
 
-> **Note**: I built this project as a quick weekend side project, so it's still a **work in progress**. I’ll be adding more features and fixing bugs. If you have any cool ideas, **feel free to contribute**. Let’s make this project awesome together!
+> **Note**: This is my first CLI project, and I built it as a quick weekend side project, so it's still a **work in progress**. I’ll be adding more features and fixing bugs. If you have ideas to improve the structure, code, or build process, **please feel free to contribute**. Let’s make this project awesome together!
 
 ## What’s MultiForge CLI?
 

@@ -17,6 +17,10 @@
         "laravel",
         "typescript"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PaoloJN/multi-forge-cli.git"
+    },
     "bin": {
         "multi-forge": "./build/index.js"
     },
