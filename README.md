@@ -31,18 +31,18 @@
 You can install **MultiForge** globally using npm:
 
 ```bash
-npm install -g multiforge
+npm install -g multi-forge
 ```
 
 Or with Yarn:
 
 ```bash
-yarn global add multiforge
+yarn global add multi-forge
 ```
 
 ## How to Use
 
-Once installed, just type **MultiForge** in your terminal to get started:
+Once installed, just type **multi-forge** in your terminal to get started:
 
 ```bash
 multi-forge
@@ -50,7 +50,7 @@ multi-forge
 
 ## Commands
 
--   `multi-forge` - Start a new project.
+-   `multi-forge` - Start a new project. Soon will be `multi-forge init`
 -   `multi-forge add (Coming Soon)` - Add a package to your project (Coming Soon)
 
 ## Supported Packages / Frameworks

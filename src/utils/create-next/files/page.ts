@@ -41,7 +41,7 @@ export default function Home() {
           type="button"
           className="font-mono text-xs md:text-sm p-2 px-5 rounded-md border border-gray transition-colors flex items-center gap-4 bg-white text-black"
         >
-          <span>npx multi-forge</span>
+          <span>npm install -g multi-forge</span>
           {copied ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
