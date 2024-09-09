@@ -1,0 +1,11 @@
+# Ignore source TypeScript files
+src/
+tsconfig.json
+
+# Ignore development files
+.git
+.gitignore
+node_modules/
+
+# Ignore Notes 
+notes

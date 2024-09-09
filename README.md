@@ -1,5 +1,14 @@
 <h1 align="center">MultiForge CLI</h1>
 
+<p align="center">
+  <a href=""><strong>Demo Video</strong></a> ·
+  <a href="#key-features-and-whats-coming-soon"><strong>Features</strong></a> ·
+  <a href="#supported-packages-frameworks"><strong>Supported Frameworks</strong></a> ·
+  <a href="#installation"><strong>Installation</strong></a> ·
+  <a href="#contributing"><strong>Contributing</strong></a>
+</p>
+<br/>
+
 <img src="./screen.gif" alt="MultiForge CLI" width="100%">
 
 <br/>

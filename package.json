@@ -3,16 +3,29 @@
     "version": "1.0.0",
     "main": "build/index.js",
     "type": "module",
+    "author": "Paolo Nessim",
+    "license": "MIT",
+    "description": "MultiForge CLI is a powerful tool for building full-stack apps quickly using multiple frameworks, templates, and customizable workflows.",
+    "keywords": [
+        "cli",
+        "full-stack",
+        "frameworks",
+        "templates",
+        "multi-forge",
+        "nextjs",
+        "remix",
+        "laravel",
+        "typescript"
+    ],
     "bin": {
         "multi-forge": "./build/index.js"
     },
     "scripts": {
+        "build": "tsc",
+        "start": "node ./build/index.js",
+        "prepare": "npm run build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "description": "",
     "dependencies": {
         "@inquirer/prompts": "^5.5.0",
         "@types/node": "^22.5.4",
