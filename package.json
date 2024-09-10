@@ -1,6 +1,6 @@
 {
     "name": "nessim",
-    "version": "1.0.2",
+    "version": "0.0.1",
     "main": "build/index.js",
     "type": "module",
     "author": "Paolo Nessim",
