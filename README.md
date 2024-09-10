@@ -1,4 +1,4 @@
-<h1 align="center">MultiForge CLI</h1>
+<h1 align="center">Nessim CLI</h1>
 
 <p align="center">
   <a href=""><strong>Demo Video</strong></a> ·
@@ -9,53 +9,53 @@
 </p>
 <br/>
 
-<img src="https://github.com/user-attachments/assets/fb67b060-2dda-49dc-bbbf-0b0c3d9290a3" alt="MultiForge CLI" width="100%">
+<img src="https://github.com/user-attachments/assets/169093fe-e045-4a10-aade-da758aeb6b97" alt="Nessim CLI" width="100%">
 
 <br/>
 
 > **Note**: This is my first CLI project, and I built it as a quick weekend side project, so it's still a **work in progress**. I’ll be adding more features and fixing bugs. If you have ideas to improve the structure, code, or build process, **please feel free to contribute**. Let’s make this project awesome together!
 
-## What’s MultiForge CLI?
+## What’s Nessim CLI?
 
-**MultiForge CLI** is a powerful command-line tool for quickly building full-stack apps across multiple frameworks. With built-in templates, customizable workflows, and effortless package integration, it streamlines your development process and supports popular frameworks like Next.js (with more coming soon).
+**Nessim CLI** is a powerful command-line tool for quickly building full-stack apps across multiple frameworks. With built-in templates, customizable workflows, and effortless package integration, it streamlines your development process and supports popular frameworks like Next.js (with more coming soon).
 
 ## Key Features (and what’s coming soon)
 
 -   **Multi-Framework Support**: Currently supports **Next.js**, with plans to add **Remix** and **Laravel** soon, so you can easily switch between different frameworks for your projects.
--   **Effortless Package Integration**: Add important packages to your project and adjust them to match your coding style. Whether it's configurations or how things are set up, MultiForge adapts to the way you like to code.
+-   **Effortless Package Integration**: Add important packages to your project and adjust them to match your coding style. Whether it's configurations or how things are set up, Nessim adapts to the way you like to code.
 -   **Templates**: Create your own templates or use built-in ones to kick-start your projects. You can also pull remote templates from GitHub or local directories, giving you flexibility in how you start your projects.
--   **Highly Customizable**: Full control over everything! Modify package setups, templates, and configurations to match your unique needs and workflow. MultiForge is designed to fit how you like to work.
+-   **Highly Customizable**: Full control over everything! Modify package setups, templates, and configurations to match your unique needs and workflow. Nessim is designed to fit how you like to work.
 
 ## Installation
 
-You can install **MultiForge** globally using npm:
+You can install **Nessim** globally using npm:
 
 ```bash
-npm install -g multi-forge
+npm install -g nessim
 ```
 
 Or with Yarn:
 
 ```bash
-yarn global add multi-forge
+yarn global add nessim
 ```
 
 ## How to Use
 
-Once installed, just type **multi-forge** in your terminal to get started:
+Once installed, just type **nessim** in your terminal to get started:
 
 ```bash
-multi-forge
+nessim
 ```
 
 ## Commands
 
--   `multi-forge` - Start a new project. Soon will be `multi-forge init`
--   `multi-forge add (Coming Soon)` - Add a package to your project (Coming Soon)
+-   `nessim` - Start a new project. Soon will be `nessim init`
+-   `nessim add (Coming Soon)` - Add a package to your project (Coming Soon)
 
 ## Supported Packages / Frameworks
 
-> Right now, **MultiForge** only supports **Next.js** since I had limited time to work on it. But more frameworks like **Remix** and **Laravel** are on the way! I’m also planning to add more packages and features to make it even more powerful.
+> Right now, **Nessim** only supports **Next.js** since I had limited time to work on it. But more frameworks like **Remix** and **Laravel** are on the way! I’m also planning to add more packages and features to make it even more powerful.
 
 -   **Next.js**: The React framework for building websites.
 -   **Remix (Coming Soon)**: A modern web framework for building web apps.

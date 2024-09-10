@@ -13,16 +13,21 @@ async function addAnalytics(options: CLIOptions) {
     if (!options.analytics) {
         box(`📊 ${chalk.bold("Would you like to add analytics")}`);
 
-        options.analytics = await select({
-            message: "Select analytics to use:",
-            choices: [
-                new Separator(),
-                { name: "Google Analytics", value: "google-analytics" },
-                { name: "Vercel Analytics", value: "vercel-analytics" },
-                new Separator(),
-                nullOption,
-            ],
-        });
+        try {
+            options.analytics = await select({
+                message: "Select analytics to use:",
+                choices: [
+                    new Separator(),
+                    { name: "Google Analytics", value: "google-analytics" },
+                    { name: "Vercel Analytics", value: "vercel-analytics" },
+                    new Separator(),
+                    nullOption,
+                ],
+            });
+        } catch (error) {
+            console.log("\nThank you for using Nessim CLI!"); // Graceful exit
+            process.exit(0); // Ensure process exits cleanly
+        }
     }
 
     if (options.analytics === "google-analytics") {

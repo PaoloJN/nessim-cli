@@ -57,10 +57,15 @@ async function addAuth(options: CLIOptions) {
         //   }
         // }
 
-        auth.package = await select({
-            message: "Select an Auth library to use:",
-            choices: [...availableAuthLibraries, new Separator(), nullOption],
-        });
+        try {
+            auth.package = await select({
+                message: "Select an Auth library to use:",
+                choices: [...availableAuthLibraries, new Separator(), nullOption],
+            });
+        } catch (error) {
+            console.log("\nThank you for using Nessim CLI!"); // Graceful exit
+            process.exit(0); // Ensure process exits cleanly
+        }
     }
 
     // if (!auth.providers && auth.package !== "clerk") {

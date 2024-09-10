@@ -27,19 +27,19 @@ export function box(message: string): void {
 }
 export function initMessage() {
     console.clear();
-    console.log(chalk(figlet.textSync("Multi Forge", { font: "ANSI Shadow" })));
+    console.log(chalk(figlet.textSync("Nessim CLI", { font: "ANSI Shadow" })));
 
-    logger.info(
-        chalk.white("Multi Forge CLI is still a WIP. Read more about what's coming here: ") +
+    console.log(
+        chalk.white("Nessim CLI is still a WIP. Read more about what's coming here: ") +
             chalk.cyan(
-                "\x1b]8;;https://github.com/PaoloJN/multi-forge-cli\x1b\\Multi Forge CLI GitHub\x1b]8;;\x1b\\"
+                "\x1b]8;;https://github.com/PaoloJN/nessim-cli\x1b\\Nessim CLI GitHub\x1b]8;;\x1b\\"
             )
     );
 
-    logger.info(
+    console.log(
         chalk.white("If you encounter any issues, please report them here: ") +
             chalk.cyan(
-                "\x1b]8;;https://github.com/PaoloJN/multi-forge-cli/issues\x1b\\Multi Forge CLI Issues\x1b]8;;\x1b\\"
+                "\x1b]8;;https://github.com/PaoloJN/nessim-cli/issues\x1b\\Nessim CLI Issues\x1b]8;;\x1b\\"
             )
     );
 

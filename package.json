@@ -1,17 +1,17 @@
 {
-    "name": "multi-forge",
+    "name": "nessim",
     "version": "1.0.2",
     "main": "build/index.js",
     "type": "module",
     "author": "Paolo Nessim",
     "license": "MIT",
-    "description": "MultiForge CLI is a powerful tool for building full-stack apps quickly using multiple frameworks, templates, and customizable workflows.",
+    "description": "Nessim CLI is a powerful tool for building full-stack apps quickly using multiple frameworks, templates, and customizable workflows.",
     "keywords": [
         "cli",
         "full-stack",
         "frameworks",
         "templates",
-        "multi-forge",
+        "nessim",
         "nextjs",
         "remix",
         "laravel",
@@ -19,10 +19,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/PaoloJN/multi-forge-cli.git"
+        "url": "https://github.com/PaoloJN/nessim-cli.git"
     },
     "bin": {
-        "multi-forge": "./build/index.js"
+        "nessim": "./build/index.js"
     },
     "scripts": {
         "build": "tsc",

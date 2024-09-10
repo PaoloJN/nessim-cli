@@ -30,39 +30,49 @@ async function askDatabaseType(options: CLIOptions) {
     if (!options.database?.type) {
         box(`${chalk.bold("🗄️ Would you like to add a Database")}`);
 
-        options.database.type = await select({
-            message: "Select a database to use:",
-            choices: [
-                new Separator(),
-                {
-                    name: "Postgres (Postgres JS, Vercel PG, Node PG, Neon, AWS)",
-                    value: "postgresql",
-                },
-                { name: "MySQL (MySQL 2, Planetscale)", value: "mysql" },
-                { name: "SQLite (Better SQLite3, Turso)", value: "sqlite" },
-                new Separator(),
-                nullOption,
-            ],
-        });
+        try {
+            options.database.type = await select({
+                message: "Select a database to use:",
+                choices: [
+                    new Separator(),
+                    {
+                        name: "Postgres (Postgres JS, Vercel PG, Node PG, Neon, AWS)",
+                        value: "postgresql",
+                    },
+                    { name: "MySQL (MySQL 2, Planetscale)", value: "mysql" },
+                    { name: "SQLite (Better SQLite3, Turso)", value: "sqlite" },
+                    new Separator(),
+                    nullOption,
+                ],
+            });
+        } catch (error) {
+            console.log("\nThank you for using Nessim CLI!"); // Graceful exit
+            process.exit(0); // Ensure process exits cleanly
+        }
     }
 }
 
 // function to add ORM
 async function askDatabaseORM(options: CLIOptions) {
     if (!options.database?.orm && options.database?.type) {
-        options.database.orm = await select({
-            message: "Select an ORM to use:",
-            choices: [
-                {
-                    name: "Drizzle (Lightweight ORM) - Recommended",
-                    value: "drizzle",
-                },
-                {
-                    name: "Prisma (Feature-rich ORM with type safety)",
-                    value: "prisma",
-                },
-            ],
-        });
+        try {
+            options.database.orm = await select({
+                message: "Select an ORM to use:",
+                choices: [
+                    {
+                        name: "Drizzle (Lightweight ORM) - Recommended",
+                        value: "drizzle",
+                    },
+                    {
+                        name: "Prisma (Feature-rich ORM with type safety)",
+                        value: "prisma",
+                    },
+                ],
+            });
+        } catch (error) {
+            console.log("\nThank you for using Nessim CLI!"); // Graceful exit
+            process.exit(0); // Ensure process exits cleanly
+        }
     }
 }
 
@@ -95,10 +105,15 @@ async function askDatabaseProvider(options: CLIOptions) {
                 break;
         }
 
-        options.database.provider = await select({
-            message: "Select a database provider to use:",
-            choices: [new Separator(), ...databaseProviderChoices],
-        });
+        try {
+            options.database.provider = await select({
+                message: "Select a database provider to use:",
+                choices: [new Separator(), ...databaseProviderChoices],
+            });
+        } catch (error) {
+            console.log("\nThank you for using Nessim CLI!"); // Graceful exit
+            process.exit(0); // Ensure process exits cleanly
+        }
     }
 
     options.database.provider = "none";
